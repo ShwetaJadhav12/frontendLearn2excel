@@ -128,11 +128,4 @@ function logout(e) {
     window.location.href = "/frontend/index.html";
 }
 
-function requireAuth() {
-    if (!checkAuthStatus()) {
-        alert("Please login to access this page");
-        window.location.href = "/frontend/pages/auth/login.html";
-        return false;
-    }
-    return true;
-}
+// ✅ Removed requireAuth() and login alert logic
