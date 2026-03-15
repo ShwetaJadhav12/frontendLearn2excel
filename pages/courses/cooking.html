@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking Skill Development</title>
+    <link rel="stylesheet" href="/frontend/assets/css/main/cooking.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <!-- Logo Section (Image + Text) -->
+        <div class="logo">
+          <a href="#home">
+            <img
+              src="/frontend/assets/images/logos/logo.png"
+              alt="Learn2Excel Logo"
+              class="logo-img"
+            />
+            <span class="logo-text">Learn2Excel</span>
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="/frontend/index.html#home">Home</a></li>
+          <li><a href="/frontend/index.html#courses">Courses</a></li>
+          <li><a href="/frontend/index.html#testimonials">Testimonials</a></li>
+          <li><a href="/frontend/pages/about/about.html">About Us</a></li>
+        </ul>
+        <div class="auth-links">
+          <!-- Existing login/signup -->
+          <div class="user-profile profile-dropdown">
+            <div class="profile-avatar" onclick="toggleDropdown()">AB</div>
+            <div class="dropdown-menu">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Top Banner with Parallax Effect -->
+    <div class="top-banner">
+      <div class="banner-overlay">
+        <h1>Healthy Habits,</h1>
+        <h1>Healthy Life</h1>
+        <p>Master the art of cooking with expertly designed modules.</p>
+      </div>
+    </div>
+
+    <!-- Section Before Modules -->
+    <section class="intro-section">
+      <div class="intro-text">
+        <h2>Ready to Take Control of Your Kitchen?</h2>
+        <p>
+          Discover the joy of cooking with personalized tips and expert
+          guidance. Join us to transform your cooking skills and explore the
+          world of culinary excellence.
+        </p>
+      </div>
+      <div class="intro-images">
+        <img
+          src="/frontend/assets/images/cooking/jar_img.png"
+          alt="Salad in Jar"
+        />
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <section id="modules" class="module-section">
+        <h2>Start Learning with Our Modules</h2>
+        <div class="module-container">
+          <div class="module">
+            <h3>1. Basics of Indian Cooking</h3>
+            <p>Learn skills like masala preparation and kitchen safety.</p>
+            <div class="module-actions">
+              <a
+                href="/frontend/modules/cooking/basics/index.html"
+                class="learn-btn"
+                onclick="markLearned(event, 'cooking', 1)"
+                >Learn</a
+              >
+              <button
+                onclick="takeQuiz('cook_q1', 'cooking', 1)"
+                class="quiz-btn"
+              >
+                Take Quiz
+              </button>
+            </div>
+          </div>
+
+          <div class="module">
+            <h3>2. Staple Indian Dishes</h3>
+            <p>Master the art of cooking rice, dals, and Indian breads.</p>
+            <div class="module-actions">
+              <a
+                href="/frontend/modules/cooking/staples/index.html"
+                class="learn-btn"
+                onclick="markLearned(event, 'cooking', 2)"
+                >Learn</a
+              >
+              <button
+                onclick="takeQuiz('cook_q2', 'cooking', 2)"
+                class="quiz-btn"
+              >
+                Take Quiz
+              </button>
+            </div>
+          </div>
+
+          <div class="module">
+            <h3>3. Pickles, Chutneys and Raitas</h3>
+            <p>Enhance meals with flavorful pickles, chutneys and raitas.</p>
+            <div class="module-actions">
+              <a
+                href="/frontend/modules/cooking/sides/index.html"
+                class="learn-btn"
+                onclick="markLearned(event, 'cooking', 3)"
+                >Learn</a
+              >
+              <button
+                onclick="takeQuiz('cook_q3', 'cooking', 3)"
+                class="quiz-btn"
+              >
+                Take Quiz
+              </button>
+            </div>
+          </div>
+
+          <div class="module">
+            <h3>4. Regional Cuisines of India</h3>
+            <p>Explore the flavors of North, South, East, or West India.</p>
+            <div class="module-actions">
+              <a
+                href="/frontend/modules/cooking/regional/index.html"
+                class="learn-btn"
+                onclick="markLearned(event, 'cooking', 4)"
+                >Learn</a
+              >
+              <button
+                onclick="takeQuiz('cook_q4', 'cooking', 4)"
+                class="quiz-btn"
+              >
+                Take Quiz
+              </button>
+            </div>
+          </div>
+
+          <div class="module">
+            <h3>5. Street Food Favorites</h3>
+            <p>Recreate street foods like pani puri, pav bhaji.</p>
+            <div class="module-actions">
+              <a
+                href="/frontend/modules/cooking/street-food/index.html"
+                class="learn-btn"
+                onclick="markLearned(event, 'cooking', 5)"
+                >Learn</a
+              >
+              <button
+                onclick="takeQuiz('cook_q5', 'cooking', 5)"
+                class="quiz-btn"
+              >
+                Take Quiz
+              </button>
+            </div>
+          </div>
+
+          <div class="module">
+            <h3>6. Festive and Traditional Foods</h3>
+            <p>Prepare festive delicacies for every occasion.</p>
+            <div class="module-actions">
+              <a
+                href="/frontend/modules/cooking/festive/index.html"
+                class="learn-btn"
+                onclick="markLearned(event, 'cooking', 6)"
+                >Learn</a
+              >
+              <button
+                onclick="takeQuiz('cook_q6', 'cooking', 6)"
+                class="quiz-btn"
+              >
+                Take Quiz
+              </button>
+            </div>
+          </div>
+
+          <div class="module">
+            <h3>7. Healthy Indian Cooking</h3>
+            <p>Focus on nutritious, low-oil, and millet-based recipes.</p>
+            <div class="module-actions">
+              <a
+                href="/frontend/modules/cooking/healthy/index.html"
+                class="learn-btn"
+                onclick="markLearned(event, 'cooking', 7)"
+                >Learn</a
+              >
+              <button
+                onclick="takeQuiz('cook_q7', 'cooking', 7)"
+                class="quiz-btn"
+              >
+                Take Quiz
+              </button>
+            </div>
+          </div>
+
+          <div class="module">
+            <h3>8. Meal Planning</h3>
+            <p>
+              Plan balanced meals, reduce waste, and batch-cook effectively.
+            </p>
+            <div class="module-actions">
+              <a
+                href="/frontend/modules/cooking/planning/index.html"
+                class="learn-btn"
+                onclick="markLearned(event, 'cooking', 8)"
+                >Learn</a
+              >
+              <button
+                onclick="takeQuiz('cook_q8', 'cooking', 8)"
+                class="quiz-btn"
+              >
+                Take Quiz
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="interactive-tools">
+        <h2>Interactive Tools</h2>
+        <div class="tool">
+          <a href="/frontend/games/time-management.html">
+            <h3>Game 1: Cooking Time Management</h3>
+          </a>
+        </div>
+        <div class="tool">
+          <a href="/frontend/games/memory-game.html">
+            <h3>Game 2: Cooking Memory Game</h3>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Cooking Skill Development | <a href="#">Contact Us</a></p>
+    </footer>
+    <script>
+      async function takeQuiz(quizKey, course, moduleNumber) {
+        if (!requireAuth()) return;
+
+        const token = localStorage.getItem("token");
+
+        try {
+          const res = await fetch(
+            `http://localhost:3000/api/progress/is-learned/${course}/${moduleNumber}`,
+            {
+              headers: {
+                Authorization: "Bearer " + token,
+              },
+            },
+          );
+
+          const data = await res.json();
+
+          if (!data.learned) {
+            alert("⚠️ Please learn the concepts first.");
+            return;
+          }
+
+          const quizUrls = {
+            cook_q1: "/frontend/quizzes/cooking/quiz1.html",
+            cook_q2: "/frontend/quizzes/cooking/quiz2.html",
+            cook_q3: "/frontend/quizzes/cooking/quiz3.html",
+            cook_q4: "/frontend/quizzes/cooking/quiz4.html",
+            cook_q5: "/frontend/quizzes/cooking/quiz5.html",
+            cook_q6: "/frontend/quizzes/cooking/quiz6.html",
+            cook_q7: "/frontend/quizzes/cooking/quiz7.html",
+            cook_q8: "/frontend/quizzes/cooking/quiz8.html",
+          };
+
+          window.location.href = quizUrls[quizKey];
+        } catch (err) {
+          alert("Unable to verify learning progress");
+        }
+      }
+
+      async function markLearned(e, course, moduleNumber) {
+        if (!requireAuth()) {
+          e.preventDefault();
+          return;
+        }
+
+        const token = localStorage.getItem("token");
+
+        try {
+          await fetch("http://localhost:3000/api/progress/learn", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + token,
+            },
+            body: JSON.stringify({
+              course,
+              module_number: moduleNumber,
+            }),
+          });
+        } catch (err) {
+          console.error("Failed to mark progress", err);
+        }
+      }
+    </script>
+    <script src="/frontend/assets/js/main/script.js"></script>
+  </body>
+</html>
